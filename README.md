@@ -1,4 +1,4 @@
-# Chart Session Tracker Bot 📈
+# Market Pulse Bot 📈
 
 A Discord bot to help traders share their current market analysis status live in a server.
 
@@ -6,26 +6,58 @@ A Discord bot to help traders share their current market analysis status live in
 
 ## Features
 
-- Set your trading category (Indices, Commodities, Forex Majors/Crosses, All).
-- Automatically detects Forex trading sessions based on your timezone.
-- Announce your current status in a `#status` channel.
-- Mark yourself done via command or interactive button.
-- Status auto-expires after 12 hours to keep things tidy.
-
+- 📈 Set your trading category (Indices, Commodities, Forex Major/Cross, All).
+- 🌐 Choose your timezone to determine the current market session.
+- 📢 Posts your status to the `#status` channel automatically.
+- ✅ Clickable Done button or `/done` command to end your session.
+- 🕒 Status expires automatically after 12 hours.
 ---
 
 ## Commands
 
-- `/setstatus category timezone` — Start sharing your trading session.
+
+- `/setstatus category timezone` — Start sharing your trading session.  
+  Example: `/setstatus category:"Forex (Major)" timezone:"Asia/Kolkata"`  
+  (Both category and timezone are selected from dropdown lists.)
+
 - `/done` — Mark your trading session as finished.
-- ✅ Interactive **Done** button to clear your status.
+
+- `/status` — View everyone’s active trading statuses.
+
+- `/mystatus` — View your current trading status.
+
+- `/help` — Show all available commands and info.
+
+- ✅ Click the **Done** button on your status message to mark your session as finished.
+
+---
+
+supported_categories:
+  - Indices
+  - Commodities
+  - Forex (Major)
+  - Forex (Cross)
+  - All
+
+supported_timezones:
+  - UTC
+  - Asia/Kolkata
+  - America/New_York
+  - Europe/London
+  - Asia/Tokyo
+  - Australia/Sydney
+  - Europe/Paris
+  - America/Los_Angeles
+  - Asia/Shanghai
+  - America/Chicago
+
 
 ---
 
 ## Setup Instructions
 
-1. Clone this repo: git clone https://github.com/Prasannaram2k4/chart-session-tracker-bot.git
-cd chart-session-tracker-bot
+1. Clone this repo: git clone: git clone https://github.com/Prasannaram2k4/marketpulse-bot.git
+cd marketpulse-bot
 
 2. Create a Discord bot in the [Discord Developer Portal](https://discord.com/developers/applications) and get your token.
 
