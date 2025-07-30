@@ -8,9 +8,9 @@ A Discord bot to help traders share their current market analysis status live in
 
 - Set your trading category (Indices, Commodities, Forex Majors/Crosses, All).
 - Automatically detects Forex trading sessions based on your timezone.
-- Announce your current status in a #status channel.
-- Mark yourself done via command or button.
-- Status auto-expires after 12 hours to keep things clean.
+- Announce your current status in a `#status` channel.
+- Mark yourself done via command or interactive button.
+- Status auto-expires after 12 hours to keep things tidy.
 
 ---
 
@@ -27,34 +27,35 @@ A Discord bot to help traders share their current market analysis status live in
 1. Clone this repo: git clone https://github.com/Prasannaram2k4/chart-session-tracker-bot.git
 cd chart-session-tracker-bot
 
-2. Create a Discord bot on [Discord Developer Portal](https://discord.com/developers/applications) and get your token.
+2. Create a Discord bot in the [Discord Developer Portal](https://discord.com/developers/applications) and get your token.
 
-3. Enable Privileged Gateway Intents on the bot page:
+3. Enable the following Privileged Gateway Intents for your bot:
+- Presence Intent  
+- Server Members Intent  
+- Message Content Intent
 
-   - Presence Intent  
-   - Server Members Intent  
-   - Message Content Intent
+4. Create a `.env` file in the project root and add your bot token: DISCORD_TOKEN=your_bot_token_here
 
-4. Create a `.env` file in the project root with your bot token: DISCORD_TOKEN=your_bot_token_here
-   
 5. Install dependencies: pip install -r requirements.txt
-   
-6. Run the bot: python main.py
+
+6. Run the bot:
 
 
 ---
 
 ## Usage
 
-- Use `/setstatus` to start sharing your market analysis session.
-- Use `/done` when you finish.
-- Your status will be posted in #status channel automatically.
+- `/setstatus category timezone` — Start sharing your current market analysis session.
+- `/done` — Mark your trading session as finished.
+- `/status` — View your current session status.
+- `/help` — Display a help message with available commands.
+- Use the ✅ **Done** button on your status message to clear it quickly
 
 ---
 
 ## Contributing
 
-Contributions are welcome! Feel free to fork and send pull requests.
+Please see the [CONTRIBUTING.md](CONTRIBUTING.md) file for details on how to contribute.
 
 ---
 
@@ -65,9 +66,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 Made with ❤️ by Prasannaram2k4
-
-
-
-
-
-
