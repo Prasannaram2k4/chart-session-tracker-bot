@@ -1,5 +1,3 @@
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
 # Chart Session Tracker Bot 📈
 
 A Discord bot to help traders share their current market analysis status live in a server.
@@ -10,8 +8,8 @@ A Discord bot to help traders share their current market analysis status live in
 
 - Set your trading category (Indices, Commodities, Forex Majors/Crosses, All).
 - Automatically detects Forex trading sessions based on your timezone.
-- Announce your current status in a `#status` channel.
-- Mark yourself done via command or interactive button.
+- Announce your current status in a #status channel.
+- Mark yourself done via command or button.
 - Status auto-expires after 12 hours to keep things clean.
 
 ---
@@ -26,52 +24,50 @@ A Discord bot to help traders share their current market analysis status live in
 
 ## Setup Instructions
 
-1. Clone this repo:
+1. Clone this repo: git clone https://github.com/Prasannaram2k4/chart-session-tracker-bot.git
+cd chart-session-tracker-bot
 
-   ```bash
-   git clone https://github.com/Prasannaram2k4/chart-session-tracker-bot.git
-   cd chart-session-tracker-bot
-Create a Discord bot on the Discord Developer Portal and get your token.
+2. Create a Discord bot on [Discord Developer Portal](https://discord.com/developers/applications) and get your token.
 
-Enable the following Privileged Gateway Intents on your bot's page:
+3. Enable Privileged Gateway Intents on the bot page:
 
-Presence Intent
+   - Presence Intent  
+   - Server Members Intent  
+   - Message Content Intent
 
-Server Members Intent
+4. Create a `.env` file in the project root with your bot token: DISCORD_TOKEN=your_bot_token_here
+   
+5. Install dependencies: pip install -r requirements.txt
+   
+6. Run the bot: python main.py
 
-Message Content Intent
 
-Create a .env file in the project root and add your bot token:
+---
 
-ini
-Copy
-Edit
-DISCORD_TOKEN=your_bot_token_here
-Install dependencies:
+## Usage
 
-bash
-Copy
-Edit
-pip install -r requirements.txt
-Run the bot:
+- Use `/setstatus` to start sharing your market analysis session.
+- Use `/done` when you finish.
+- Your status will be posted in #status channel automatically.
 
-bash
-Copy
-Edit
-python main.py
-Usage
-Use /setstatus to start sharing your market analysis session.
+---
 
-Use /done when you finish.
+## Contributing
 
-Your status will be posted automatically in the #status channel.
+Contributions are welcome! Feel free to fork and send pull requests.
 
-Contributing
-Contributions are welcome! Please see CONTRIBUTING.md for contribution guidelines.
+---
 
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
 
 Made with ❤️ by Prasannaram2k4
+
+
+
+
 
 
