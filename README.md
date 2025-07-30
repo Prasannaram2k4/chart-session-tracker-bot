@@ -1,3 +1,7 @@
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+
 echo "# Chart Session Tracker Bot 📈
 
 A Discord bot to help traders share their current market analysis status live in a server.
